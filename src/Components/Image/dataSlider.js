@@ -19,15 +19,7 @@ const dataSlider = [
 
 
 
-// export const renderbackgroundImages = (id, picture) => (
 
-//   dataSlider.map(p => (
-//     <>
-//      key={id} style={{backgroundImage:`url(${picture})`
-//      }};
-//     </>
-//     )
-// ));
 
 
 

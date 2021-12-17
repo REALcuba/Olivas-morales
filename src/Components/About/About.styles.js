@@ -26,7 +26,7 @@ justify-content: center;
 `;
 
 export const Text = styled.div `
-color: var(--lightGray);
+color: var(--darkGray);
 align-items: center;
 `;
 
@@ -40,7 +40,7 @@ transition: opasity ease-in-out 0.4s;
 
 img{
     width: 100%;
-    height: 100%;
+    height: 50%;
     object-fit: cover;
    
 }

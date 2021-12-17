@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import dataSlider from "../../Image/dataSlider";
 import  "./Slider.css";
 import BtnSlider from "./BtnSlider";
-
+import Data from "../../Image/Data.json";
 export default function Slider() {
 
   const[slideIndex, setSlideIndex] = useState(1)
@@ -32,6 +32,23 @@ if (slideIndex !== 1) {
                     key={obj.id}
                     className={slideIndex === index + 1 ? "slide active-anim" : "slide"}
                          >
+                        
+                <div className="container-text">
+                   {Data.map((obj) => {
+                       return (
+                           <div>
+                               <h1>{obj.about}</h1>
+                     <p>{obj.text}</p>  
+                           </div>
+                           )
+                   })
+                   
+                   
+                   }
+                   
+                </div>
+                     
+             
                         <img 
                         src={process.env.PUBLIC_URL + `/Imgs/img${index + 1}.jpg`}
                         alt=""

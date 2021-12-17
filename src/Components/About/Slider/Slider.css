@@ -77,3 +77,12 @@
   .dot.active {
     background: rgb(32, 32, 32);
   }
+
+  /* my css in container.text */
+
+  .container-text{
+    color:black;
+    position: absolute;
+    z-index: 1;
+    justify-content:center;
+  }
